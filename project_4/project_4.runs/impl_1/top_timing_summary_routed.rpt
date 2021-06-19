@@ -1,0 +1,1443 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Jun 19 20:51:47 2021
+| Host         : LAPTOP-D1TL7VBM running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 15 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      7.443        0.000                      0                   20        0.322        0.000                      0                   20        4.500        0.000                       0                    21  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         7.443        0.000                      0                   20        0.322        0.000                      0                   20        4.500        0.000                       0                    21  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.443ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.322ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.443ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[17]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.571ns  (logic 1.809ns (70.365%)  route 0.762ns (29.635%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        -0.016ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.017ns = ( 20.017 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.545 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.545    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_0
+    SLICE_X0Y79          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    12.879 r  dmdecoder/ssd/clkdiv_reg[16]_i_1/O[1]
+                         net (fo=1, routed)           0.000    12.879    dmdecoder/ssd/clkdiv_reg[16]_i_1_n_6
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.594    20.017    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[17]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.292    
+                         clock uncertainty           -0.035    20.256    
+    SLICE_X0Y79          FDCE (Setup_fdce_C_D)        0.065    20.321    dmdecoder/ssd/clkdiv_reg[17]
+  -------------------------------------------------------------------
+                         required time                         20.321    
+                         arrival time                         -12.879    
+  -------------------------------------------------------------------
+                         slack                                  7.443    
+
+Slack (MET) :             7.464ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[19]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.550ns  (logic 1.788ns (70.121%)  route 0.762ns (29.879%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        -0.016ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.017ns = ( 20.017 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.545 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.545    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_0
+    SLICE_X0Y79          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    12.858 r  dmdecoder/ssd/clkdiv_reg[16]_i_1/O[3]
+                         net (fo=1, routed)           0.000    12.858    dmdecoder/ssd/clkdiv_reg[16]_i_1_n_4
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.594    20.017    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[19]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.292    
+                         clock uncertainty           -0.035    20.256    
+    SLICE_X0Y79          FDCE (Setup_fdce_C_D)        0.065    20.321    dmdecoder/ssd/clkdiv_reg[19]
+  -------------------------------------------------------------------
+                         required time                         20.321    
+                         arrival time                         -12.858    
+  -------------------------------------------------------------------
+                         slack                                  7.464    
+
+Slack (MET) :             7.538ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[18]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.476ns  (logic 1.714ns (69.228%)  route 0.762ns (30.772%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        -0.016ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.017ns = ( 20.017 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.545 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.545    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_0
+    SLICE_X0Y79          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.784 r  dmdecoder/ssd/clkdiv_reg[16]_i_1/O[2]
+                         net (fo=1, routed)           0.000    12.784    dmdecoder/ssd/clkdiv_reg[16]_i_1_n_5
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.594    20.017    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[18]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.292    
+                         clock uncertainty           -0.035    20.256    
+    SLICE_X0Y79          FDCE (Setup_fdce_C_D)        0.065    20.321    dmdecoder/ssd/clkdiv_reg[18]
+  -------------------------------------------------------------------
+                         required time                         20.321    
+                         arrival time                         -12.784    
+  -------------------------------------------------------------------
+                         slack                                  7.538    
+
+Slack (MET) :             7.554ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[16]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.460ns  (logic 1.698ns (69.028%)  route 0.762ns (30.972%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        -0.016ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.017ns = ( 20.017 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.545 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.545    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_0
+    SLICE_X0Y79          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    12.768 r  dmdecoder/ssd/clkdiv_reg[16]_i_1/O[0]
+                         net (fo=1, routed)           0.000    12.768    dmdecoder/ssd/clkdiv_reg[16]_i_1_n_7
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.594    20.017    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[16]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.292    
+                         clock uncertainty           -0.035    20.256    
+    SLICE_X0Y79          FDCE (Setup_fdce_C_D)        0.065    20.321    dmdecoder/ssd/clkdiv_reg[16]
+  -------------------------------------------------------------------
+                         required time                         20.321    
+                         arrival time                         -12.768    
+  -------------------------------------------------------------------
+                         slack                                  7.554    
+
+Slack (MET) :             7.556ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[13]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.457ns  (logic 1.695ns (68.990%)  route 0.762ns (31.010%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.016ns = ( 20.016 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    12.765 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/O[1]
+                         net (fo=1, routed)           0.000    12.765    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_6
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.593    20.016    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[13]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.291    
+                         clock uncertainty           -0.035    20.255    
+    SLICE_X0Y78          FDCE (Setup_fdce_C_D)        0.065    20.320    dmdecoder/ssd/clkdiv_reg[13]
+  -------------------------------------------------------------------
+                         required time                         20.320    
+                         arrival time                         -12.765    
+  -------------------------------------------------------------------
+                         slack                                  7.556    
+
+Slack (MET) :             7.577ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[15]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.436ns  (logic 1.674ns (68.723%)  route 0.762ns (31.277%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.016ns = ( 20.016 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    12.744 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000    12.744    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_4
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.593    20.016    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[15]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.291    
+                         clock uncertainty           -0.035    20.255    
+    SLICE_X0Y78          FDCE (Setup_fdce_C_D)        0.065    20.320    dmdecoder/ssd/clkdiv_reg[15]
+  -------------------------------------------------------------------
+                         required time                         20.320    
+                         arrival time                         -12.744    
+  -------------------------------------------------------------------
+                         slack                                  7.577    
+
+Slack (MET) :             7.651ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[14]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.362ns  (logic 1.600ns (67.743%)  route 0.762ns (32.257%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.016ns = ( 20.016 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.670 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/O[2]
+                         net (fo=1, routed)           0.000    12.670    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_5
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.593    20.016    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[14]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.291    
+                         clock uncertainty           -0.035    20.255    
+    SLICE_X0Y78          FDCE (Setup_fdce_C_D)        0.065    20.320    dmdecoder/ssd/clkdiv_reg[14]
+  -------------------------------------------------------------------
+                         required time                         20.320    
+                         arrival time                         -12.670    
+  -------------------------------------------------------------------
+                         slack                                  7.651    
+
+Slack (MET) :             7.667ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[12]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.346ns  (logic 1.584ns (67.523%)  route 0.762ns (32.477%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.016ns = ( 20.016 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.431 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.431    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_0
+    SLICE_X0Y78          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    12.654 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/O[0]
+                         net (fo=1, routed)           0.000    12.654    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_7
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.593    20.016    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[12]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.291    
+                         clock uncertainty           -0.035    20.255    
+    SLICE_X0Y78          FDCE (Setup_fdce_C_D)        0.065    20.320    dmdecoder/ssd/clkdiv_reg[12]
+  -------------------------------------------------------------------
+                         required time                         20.320    
+                         arrival time                         -12.654    
+  -------------------------------------------------------------------
+                         slack                                  7.667    
+
+Slack (MET) :             7.668ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[9]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.343ns  (logic 1.581ns (67.481%)  route 0.762ns (32.519%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.014ns = ( 20.014 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    12.651 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/O[1]
+                         net (fo=1, routed)           0.000    12.651    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_6
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.591    20.014    dmdecoder/ssd/clk
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[9]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.289    
+                         clock uncertainty           -0.035    20.253    
+    SLICE_X0Y77          FDCE (Setup_fdce_C_D)        0.065    20.318    dmdecoder/ssd/clkdiv_reg[9]
+  -------------------------------------------------------------------
+                         required time                         20.318    
+                         arrival time                         -12.651    
+  -------------------------------------------------------------------
+                         slack                                  7.668    
+
+Slack (MET) :             7.689ns  (required time - arrival time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[1]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[11]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin fall@15.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        2.322ns  (logic 1.560ns (67.187%)  route 0.762ns (32.813%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        -0.019ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.014ns = ( 20.014 - 15.000 ) 
+    Source Clock Delay      (SCD):    5.308ns = ( 10.308 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     6.482 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           2.025     8.506    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     8.602 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.705    10.308    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.459    10.767 r  dmdecoder/ssd/clkdiv_reg[1]/Q
+                         net (fo=1, routed)           0.762    11.529    dmdecoder/ssd/clkdiv_reg_n_0_[1]
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674    12.203 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.203    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_0
+    SLICE_X0Y76          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    12.317 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    12.317    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_0
+    SLICE_X0Y77          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    12.630 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000    12.630    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_4
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                     15.000    15.000 f  
+    E3                                                0.000    15.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000    15.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    16.411 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.920    18.331    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    18.422 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          1.591    20.014    dmdecoder/ssd/clk
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[11]/C  (IS_INVERTED)
+                         clock pessimism              0.275    20.289    
+                         clock uncertainty           -0.035    20.253    
+    SLICE_X0Y77          FDCE (Setup_fdce_C_D)        0.065    20.318    dmdecoder/ssd/clkdiv_reg[11]
+  -------------------------------------------------------------------
+                         required time                         20.318    
+                         arrival time                         -12.630    
+  -------------------------------------------------------------------
+                         slack                                  7.689    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.322ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[0]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[0]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.434ns  (logic 0.261ns (60.194%)  route 0.173ns (39.806%))
+  Logic Levels:           2  (CARRY4=1 LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.026ns = ( 7.026 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.510ns = ( 6.510 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.591     6.510    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[0]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.146     6.656 f  dmdecoder/ssd/clkdiv_reg[0]/Q
+                         net (fo=1, routed)           0.173     6.829    dmdecoder/ssd/clkdiv_reg_n_0_[0]
+    SLICE_X0Y75          LUT1 (Prop_lut1_I0_O)        0.045     6.874 r  dmdecoder/ssd/clkdiv[0]_i_3/O
+                         net (fo=1, routed)           0.000     6.874    dmdecoder/ssd/clkdiv[0]_i_3_n_0
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     6.944 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/O[0]
+                         net (fo=1, routed)           0.000     6.944    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_7
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.861     7.026    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[0]/C  (IS_INVERTED)
+                         clock pessimism             -0.515     6.510    
+    SLICE_X0Y75          FDCE (Hold_fdce_C_D)         0.112     6.622    dmdecoder/ssd/clkdiv_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -6.622    
+                         arrival time                           6.944    
+  -------------------------------------------------------------------
+                         slack                                  0.322    
+
+Slack (MET) :             0.325ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[12]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[12]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.437ns  (logic 0.261ns (59.665%)  route 0.176ns (40.335%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.030ns = ( 7.030 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.513ns = ( 6.513 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.594     6.513    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[12]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y78          FDCE (Prop_fdce_C_Q)         0.146     6.659 r  dmdecoder/ssd/clkdiv_reg[12]/Q
+                         net (fo=1, routed)           0.176     6.836    dmdecoder/ssd/clkdiv_reg_n_0_[12]
+    SLICE_X0Y78          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     6.951 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/O[0]
+                         net (fo=1, routed)           0.000     6.951    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_7
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.865     7.030    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[12]/C  (IS_INVERTED)
+                         clock pessimism             -0.516     6.513    
+    SLICE_X0Y78          FDCE (Hold_fdce_C_D)         0.112     6.625    dmdecoder/ssd/clkdiv_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -6.625    
+                         arrival time                           6.951    
+  -------------------------------------------------------------------
+                         slack                                  0.325    
+
+Slack (MET) :             0.325ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[16]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[16]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.437ns  (logic 0.261ns (59.665%)  route 0.176ns (40.335%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.031ns = ( 7.031 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.514ns = ( 6.514 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.595     6.514    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[16]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y79          FDCE (Prop_fdce_C_Q)         0.146     6.660 r  dmdecoder/ssd/clkdiv_reg[16]/Q
+                         net (fo=1, routed)           0.176     6.837    dmdecoder/ssd/clkdiv_reg_n_0_[16]
+    SLICE_X0Y79          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     6.952 r  dmdecoder/ssd/clkdiv_reg[16]_i_1/O[0]
+                         net (fo=1, routed)           0.000     6.952    dmdecoder/ssd/clkdiv_reg[16]_i_1_n_7
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.866     7.031    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[16]/C  (IS_INVERTED)
+                         clock pessimism             -0.516     6.514    
+    SLICE_X0Y79          FDCE (Hold_fdce_C_D)         0.112     6.626    dmdecoder/ssd/clkdiv_reg[16]
+  -------------------------------------------------------------------
+                         required time                         -6.626    
+                         arrival time                           6.952    
+  -------------------------------------------------------------------
+                         slack                                  0.325    
+
+Slack (MET) :             0.325ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[8]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[8]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.437ns  (logic 0.261ns (59.665%)  route 0.176ns (40.335%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.029ns = ( 7.029 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.513ns = ( 6.513 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.594     6.513    dmdecoder/ssd/clk
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[8]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y77          FDCE (Prop_fdce_C_Q)         0.146     6.659 r  dmdecoder/ssd/clkdiv_reg[8]/Q
+                         net (fo=1, routed)           0.176     6.836    dmdecoder/ssd/clkdiv_reg_n_0_[8]
+    SLICE_X0Y77          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     6.951 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/O[0]
+                         net (fo=1, routed)           0.000     6.951    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_7
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.864     7.029    dmdecoder/ssd/clk
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[8]/C  (IS_INVERTED)
+                         clock pessimism             -0.515     6.513    
+    SLICE_X0Y77          FDCE (Hold_fdce_C_D)         0.112     6.625    dmdecoder/ssd/clkdiv_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -6.625    
+                         arrival time                           6.951    
+  -------------------------------------------------------------------
+                         slack                                  0.325    
+
+Slack (MET) :             0.325ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[4]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[4]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.437ns  (logic 0.261ns (59.665%)  route 0.176ns (40.335%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.027ns = ( 7.027 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.511ns = ( 6.511 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.592     6.511    dmdecoder/ssd/clk
+    SLICE_X0Y76          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[4]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y76          FDCE (Prop_fdce_C_Q)         0.146     6.657 r  dmdecoder/ssd/clkdiv_reg[4]/Q
+                         net (fo=1, routed)           0.176     6.834    dmdecoder/ssd/clkdiv_reg_n_0_[4]
+    SLICE_X0Y76          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     6.949 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/O[0]
+                         net (fo=1, routed)           0.000     6.949    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_7
+    SLICE_X0Y76          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.862     7.027    dmdecoder/ssd/clk
+    SLICE_X0Y76          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[4]/C  (IS_INVERTED)
+                         clock pessimism             -0.515     6.511    
+    SLICE_X0Y76          FDCE (Hold_fdce_C_D)         0.112     6.623    dmdecoder/ssd/clkdiv_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -6.623    
+                         arrival time                           6.949    
+  -------------------------------------------------------------------
+                         slack                                  0.325    
+
+Slack (MET) :             0.358ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[0]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[1]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.470ns  (logic 0.297ns (63.246%)  route 0.173ns (36.754%))
+  Logic Levels:           2  (CARRY4=1 LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.026ns = ( 7.026 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.510ns = ( 6.510 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.591     6.510    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[0]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y75          FDCE (Prop_fdce_C_Q)         0.146     6.656 f  dmdecoder/ssd/clkdiv_reg[0]/Q
+                         net (fo=1, routed)           0.173     6.829    dmdecoder/ssd/clkdiv_reg_n_0_[0]
+    SLICE_X0Y75          LUT1 (Prop_lut1_I0_O)        0.045     6.874 r  dmdecoder/ssd/clkdiv[0]_i_3/O
+                         net (fo=1, routed)           0.000     6.874    dmdecoder/ssd/clkdiv[0]_i_3_n_0
+    SLICE_X0Y75          CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.106     6.980 r  dmdecoder/ssd/clkdiv_reg[0]_i_1/O[1]
+                         net (fo=1, routed)           0.000     6.980    dmdecoder/ssd/clkdiv_reg[0]_i_1_n_6
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.861     7.026    dmdecoder/ssd/clk
+    SLICE_X0Y75          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[1]/C  (IS_INVERTED)
+                         clock pessimism             -0.515     6.510    
+    SLICE_X0Y75          FDCE (Hold_fdce_C_D)         0.112     6.622    dmdecoder/ssd/clkdiv_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -6.622    
+                         arrival time                           6.980    
+  -------------------------------------------------------------------
+                         slack                                  0.358    
+
+Slack (MET) :             0.361ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[12]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[13]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.473ns  (logic 0.297ns (62.732%)  route 0.176ns (37.268%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.030ns = ( 7.030 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.513ns = ( 6.513 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.594     6.513    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[12]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y78          FDCE (Prop_fdce_C_Q)         0.146     6.659 r  dmdecoder/ssd/clkdiv_reg[12]/Q
+                         net (fo=1, routed)           0.176     6.836    dmdecoder/ssd/clkdiv_reg_n_0_[12]
+    SLICE_X0Y78          CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.151     6.987 r  dmdecoder/ssd/clkdiv_reg[12]_i_1/O[1]
+                         net (fo=1, routed)           0.000     6.987    dmdecoder/ssd/clkdiv_reg[12]_i_1_n_6
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.865     7.030    dmdecoder/ssd/clk
+    SLICE_X0Y78          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[13]/C  (IS_INVERTED)
+                         clock pessimism             -0.516     6.513    
+    SLICE_X0Y78          FDCE (Hold_fdce_C_D)         0.112     6.625    dmdecoder/ssd/clkdiv_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -6.625    
+                         arrival time                           6.987    
+  -------------------------------------------------------------------
+                         slack                                  0.361    
+
+Slack (MET) :             0.361ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[16]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[17]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.473ns  (logic 0.297ns (62.732%)  route 0.176ns (37.268%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.031ns = ( 7.031 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.514ns = ( 6.514 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.595     6.514    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[16]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y79          FDCE (Prop_fdce_C_Q)         0.146     6.660 r  dmdecoder/ssd/clkdiv_reg[16]/Q
+                         net (fo=1, routed)           0.176     6.837    dmdecoder/ssd/clkdiv_reg_n_0_[16]
+    SLICE_X0Y79          CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.151     6.988 r  dmdecoder/ssd/clkdiv_reg[16]_i_1/O[1]
+                         net (fo=1, routed)           0.000     6.988    dmdecoder/ssd/clkdiv_reg[16]_i_1_n_6
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.866     7.031    dmdecoder/ssd/clk
+    SLICE_X0Y79          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[17]/C  (IS_INVERTED)
+                         clock pessimism             -0.516     6.514    
+    SLICE_X0Y79          FDCE (Hold_fdce_C_D)         0.112     6.626    dmdecoder/ssd/clkdiv_reg[17]
+  -------------------------------------------------------------------
+                         required time                         -6.626    
+                         arrival time                           6.988    
+  -------------------------------------------------------------------
+                         slack                                  0.361    
+
+Slack (MET) :             0.361ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[8]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[9]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.473ns  (logic 0.297ns (62.732%)  route 0.176ns (37.268%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.029ns = ( 7.029 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.513ns = ( 6.513 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.594     6.513    dmdecoder/ssd/clk
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[8]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y77          FDCE (Prop_fdce_C_Q)         0.146     6.659 r  dmdecoder/ssd/clkdiv_reg[8]/Q
+                         net (fo=1, routed)           0.176     6.836    dmdecoder/ssd/clkdiv_reg_n_0_[8]
+    SLICE_X0Y77          CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.151     6.987 r  dmdecoder/ssd/clkdiv_reg[8]_i_1/O[1]
+                         net (fo=1, routed)           0.000     6.987    dmdecoder/ssd/clkdiv_reg[8]_i_1_n_6
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.864     7.029    dmdecoder/ssd/clk
+    SLICE_X0Y77          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[9]/C  (IS_INVERTED)
+                         clock pessimism             -0.515     6.513    
+    SLICE_X0Y77          FDCE (Hold_fdce_C_D)         0.112     6.625    dmdecoder/ssd/clkdiv_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -6.625    
+                         arrival time                           6.987    
+  -------------------------------------------------------------------
+                         slack                                  0.361    
+
+Slack (MET) :             0.361ns  (arrival time - required time)
+  Source:                 dmdecoder/ssd/clkdiv_reg[4]/C
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dmdecoder/ssd/clkdiv_reg[5]/D
+                            (falling edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin fall@5.000ns - sys_clk_pin fall@5.000ns)
+  Data Path Delay:        0.473ns  (logic 0.297ns (62.732%)  route 0.176ns (37.268%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.027ns = ( 7.027 - 5.000 ) 
+    Source Clock Delay      (SCD):    1.511ns = ( 6.511 - 5.000 ) 
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     5.250 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.644     5.894    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     5.920 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.592     6.511    dmdecoder/ssd/clk
+    SLICE_X0Y76          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[4]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y76          FDCE (Prop_fdce_C_Q)         0.146     6.657 r  dmdecoder/ssd/clkdiv_reg[4]/Q
+                         net (fo=1, routed)           0.176     6.834    dmdecoder/ssd/clkdiv_reg_n_0_[4]
+    SLICE_X0Y76          CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.151     6.985 r  dmdecoder/ssd/clkdiv_reg[4]_i_1/O[1]
+                         net (fo=1, routed)           0.000     6.985    dmdecoder/ssd/clkdiv_reg[4]_i_1_n_6
+    SLICE_X0Y76          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin fall edge)
+                                                      5.000     5.000 f  
+    E3                                                0.000     5.000 f  CLK100MHZ (IN)
+                         net (fo=0)                   0.000     5.000    CLK100MHZ
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     5.438 f  CLK100MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.699     6.136    CLK100MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     6.165 f  CLK100MHZ_IBUF_BUFG_inst/O
+                         net (fo=20, routed)          0.862     7.027    dmdecoder/ssd/clk
+    SLICE_X0Y76          FDCE                                         r  dmdecoder/ssd/clkdiv_reg[5]/C  (IS_INVERTED)
+                         clock pessimism             -0.515     6.511    
+    SLICE_X0Y76          FDCE (Hold_fdce_C_D)         0.112     6.623    dmdecoder/ssd/clkdiv_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -6.623    
+                         arrival time                           6.985    
+  -------------------------------------------------------------------
+                         slack                                  0.361    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLK100MHZ }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  CLK100MHZ_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y75     dmdecoder/ssd/clkdiv_reg[0]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y77     dmdecoder/ssd/clkdiv_reg[10]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y77     dmdecoder/ssd/clkdiv_reg[11]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[12]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[13]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[14]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[15]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y79     dmdecoder/ssd/clkdiv_reg[16]/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X0Y79     dmdecoder/ssd/clkdiv_reg[17]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y75     dmdecoder/ssd/clkdiv_reg[0]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y75     dmdecoder/ssd/clkdiv_reg[0]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y77     dmdecoder/ssd/clkdiv_reg[10]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y77     dmdecoder/ssd/clkdiv_reg[11]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[12]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[12]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[13]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[13]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[14]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y78     dmdecoder/ssd/clkdiv_reg[14]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y75     dmdecoder/ssd/clkdiv_reg[0]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y77     dmdecoder/ssd/clkdiv_reg[10]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y77     dmdecoder/ssd/clkdiv_reg[11]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y75     dmdecoder/ssd/clkdiv_reg[1]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y75     dmdecoder/ssd/clkdiv_reg[2]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y75     dmdecoder/ssd/clkdiv_reg[3]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y76     dmdecoder/ssd/clkdiv_reg[4]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y76     dmdecoder/ssd/clkdiv_reg[5]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y76     dmdecoder/ssd/clkdiv_reg[6]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X0Y76     dmdecoder/ssd/clkdiv_reg[7]/C
+
+
+

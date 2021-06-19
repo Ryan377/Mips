@@ -1,0 +1,646 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jun 19 20:49:29 2021
+# Process ID: 21896
+# Current directory: D:/work/vivado/project_4/project_4.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/work/vivado/project_4/project_4.runs/synth_1/top.vds
+# Journal file: D:/work/vivado/project_4/project_4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18048 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 786.941 ; gain = 235.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/top.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'mips' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mips.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/maindec.sv:23]
+WARNING: [Synth 8-151] case item 6'b000000 is unreachable [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/maindec.sv:38]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/maindec.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/aludec.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/aludec.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'floprc' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/floprc.sv:23]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc' (3#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/floprc.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized0' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized0' (4#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (5#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/controller.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/datapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/hazard.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (6#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/hazard.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (7#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/regfile.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (8#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/regfile.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopenr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (9#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopenr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (10#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/adder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopenrc.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (11#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopenrc.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'signext' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/signext.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (12#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/signext.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ze' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/ze.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ze' (13#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/ze.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/sl2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (14#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/sl2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/eqcmp.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp' (15#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/eqcmp.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'floprc__parameterized0' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/floprc.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc__parameterized0' (15#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/floprc.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'floprc__parameterized1' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/floprc.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'floprc__parameterized1' (15#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/floprc.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux3.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (16#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux3.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/alu.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (17#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux2.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (17#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized1' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized1' (17#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr__parameterized2' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr__parameterized2' (17#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/flopr.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (18#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/datapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (19#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mips.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imem' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'memfile.dat'; please make sure the file is added to project and has read permission, ignoring [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:31]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+WARNING: [Synth 8-3848] Net RAM in module/entity imem does not have driver. [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (20#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/imem.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'DataMemoryDecoder' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/DataMemoryDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/dmem.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (21#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/dmem.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'IO' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/IO.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'IO' (22#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/IO.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux7seg' [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux7seg.v:23]
+INFO: [Synth 8-226] default block is never used [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux7seg.v:47]
+INFO: [Synth 8-226] default block is never used [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux7seg.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mux7seg' (23#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/mux7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemoryDecoder' (24#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/DataMemoryDecoder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (25#1) [D:/work/vivado/project_4/project_4.srcs/sources_1/imports/new/top.sv:36]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[31]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[30]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[29]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[28]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[27]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[26]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[25]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[24]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[23]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[22]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[21]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[20]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[19]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[18]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[17]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[16]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[15]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[14]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[13]
+WARNING: [Synth 8-3331] design IO has unconnected port pWriteData[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design imem has unconnected port a[7]
+WARNING: [Synth 8-3331] design imem has unconnected port a[6]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 860.352 ; gain = 308.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 860.352 ; gain = 308.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 860.352 ; gain = 308.863
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 860.352 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/work/vivado/project_4/project_4.srcs/constrs_1/imports/vivado/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/work/vivado/project_4/project_4.srcs/constrs_1/imports/vivado/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/work/vivado/project_4/project_4.srcs/constrs_1/imports/vivado/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 952.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 952.254 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 18    
+	   8 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     10 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      3 Bit        Muxes := 1     
+Module floprc 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module flopr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module hazard 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module flopenrc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module floprc__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module floprc__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module flopr__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module flopr__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module IO 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module mux7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+Module DataMemoryDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port DP driven by constant 1
+WARNING: [Synth 8-3331] design imem has unconnected port a[7]
+WARNING: [Synth 8-3331] design imem has unconnected port a[6]
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[8]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[9]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[10]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[14]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[15]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[11]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[12]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[13]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[4]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[6]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[7]' (FDCE) to 'mips/dp/r2D/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[31]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[16]' (FDC) to 'mips/dp/r3E/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[17]' (FDC) to 'mips/dp/r3E/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[18]' (FDC) to 'mips/dp/r3E/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[19]' (FDC) to 'mips/dp/r3E/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[20]' (FDC) to 'mips/dp/r3E/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[21]' (FDC) to 'mips/dp/r3E/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[22]' (FDC) to 'mips/dp/r3E/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[23]' (FDC) to 'mips/dp/r3E/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[24]' (FDC) to 'mips/dp/r3E/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[25]' (FDC) to 'mips/dp/r3E/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[26]' (FDC) to 'mips/dp/r3E/q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[27]' (FDC) to 'mips/dp/r3E/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[28]' (FDC) to 'mips/dp/r3E/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[29]' (FDC) to 'mips/dp/r3E/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r3E/q_reg[30]' (FDC) to 'mips/dp/r3E/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[26]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[5]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[3]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[0]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[2]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[1]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[27]' (FDCE) to 'mips/dp/r2D/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[29]' (FDCE) to 'mips/dp/r2D/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[28]' (FDCE) to 'mips/dp/r2D/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[24]' (FDCE) to 'mips/dp/r2D/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[25]' (FDCE) to 'mips/dp/r2D/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[21]' (FDCE) to 'mips/dp/r2D/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[22]' (FDCE) to 'mips/dp/r2D/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[23]' (FDCE) to 'mips/dp/r2D/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[19]' (FDCE) to 'mips/dp/r2D/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[20]' (FDCE) to 'mips/dp/r2D/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[16]' (FDCE) to 'mips/dp/r2D/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mips/dp/r2D/q_reg[17]' (FDCE) to 'mips/dp/r2D/q_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips/dp/r2D/q_reg[18] )
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[9]' (FDE) to 'dmdecoder/io/led_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[5]' (FDE) to 'dmdecoder/io/led_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[1]' (FDE) to 'dmdecoder/io/led_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[11]' (FDE) to 'dmdecoder/io/led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[7]' (FDE) to 'dmdecoder/io/led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[3]' (FDE) to 'dmdecoder/io/led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[8]' (FDE) to 'dmdecoder/io/led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[4]' (FDE) to 'dmdecoder/io/led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[0]' (FDE) to 'dmdecoder/io/led_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[10]' (FDE) to 'dmdecoder/io/led_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dmdecoder/io/led_reg[6]' (FDE) to 'dmdecoder/io/led_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmdecoder/io/led_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 952.254 ; gain = 400.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT3   |     9|
+|5     |LUT6   |    11|
+|6     |FDCE   |    20|
+|7     |IBUF   |    18|
+|8     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+------------------+------+
+|      |Instance    |Module            |Cells |
++------+------------+------------------+------+
+|1     |top         |                  |    82|
+|2     |  dmdecoder |DataMemoryDecoder |    46|
+|3     |    ssd     |mux7seg           |    46|
++------+------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 967.816 ; gain = 324.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 967.816 ; gain = 416.328
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 967.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 975.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+134 Infos, 118 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 975.363 ; gain = 676.742
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 975.363 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/vivado/project_4/project_4.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 19 20:50:11 2021...
