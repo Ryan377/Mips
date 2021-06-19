@@ -1,0 +1,15 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto f2e6ebce00c54b139d0a92fe78f4e3d1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'aluout' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/top.sv:28]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 32 for port 'd1' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/datapath.sv:45]
+WARNING: [VRFC 10-3091] actual bit length 26 differs from formal bit length 1 for port 's' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/datapath.sv:46]
+ERROR: [VRFC 10-3423] illegal output port connection to 'Y' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/datapath.sv:46]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'd0' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/datapath.sv:57]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 'ALUcont' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/datapath.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'a' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/top.sv:31]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'y' [D:/work/vivado/project_2/project_2.srcs/sources_1/new/datapath.sv:43]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

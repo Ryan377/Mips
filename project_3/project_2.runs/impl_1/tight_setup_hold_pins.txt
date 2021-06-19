@@ -1,0 +1,10 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                           dmdecoder/io/pReadData_reg[3]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                           dmdecoder/io/pReadData_reg[0]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                           dmdecoder/io/pReadData_reg[4]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                           dmdecoder/io/pReadData_reg[2]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                           dmdecoder/io/pReadData_reg[5]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                           dmdecoder/io/pReadData_reg[1]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
